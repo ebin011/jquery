@@ -60,21 +60,32 @@
 				<input class="form-control input-lg" placeholder="Search Your Movie Name"  type="text" id="movie">
 				</div>
 				<div class="col-xs-3 col-md-3 col-sm-12 col-xs-12">
-				<button type="button" class="btn btn-primary btn-lg" id="search">Search</button>
+				<button type="button" class="btn btn-primary btn-lg"  onclick="displayMovies(0,1)" id="search"  >Search</button>
 				</div>
 			</div>
 			
 			
 			<h2 id="info" style="display:none">Movie Details</h2>
 			<!--<ol id="movieList">list</ol>-->
+			<ul class="pagination" id="pageTab" align="center" style="visibility:hidden">
+			   <!-- <li id="previous" ><a href="#display"> << previous </a></li>
+			    <li id="one"><a href="#display">1</a></li>
+			    <li id="next" ><a href="#display"> next >> </a></li>-->
+			 </ul>
 			<div id="display" >
 				
 			</div>
+			<ul class="pagination" id="pageTab" style="visibility:hidden">
+			   <!-- <li id="previous" ><a href="#display"> << previous </a></li>
+			    <li id="one"><a href="#display">1</a></li>
+			    <li id="next" ><a href="#display"> next >> </a></li>
+			 </ul>-->
 			</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="includes/js/movieJquery.js"></script>
+	<script type="text/javascript" src="includes/js/simplePagination.js"></script>
 
 </body>
 </html>
